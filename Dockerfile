@@ -1,6 +1,9 @@
 # Custom Image for base flask application
 FROM kareemisaleh/flask-app:0.1
 
+# Enable Flask Debug Mode
+ENV FLASK_DEBUG 1
+
 # Copy the current directory contents into the container at /app
 ADD . /app
 
